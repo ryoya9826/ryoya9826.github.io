@@ -11,7 +11,7 @@ Based on paper:
 - [A note on weakly proregular sequences and local cohomology, arXiv: 2105.07652](https://arxiv.org/abs/2105.07652)
 
 ## Abstract
-This seminar is scheduled for the autumn of 2021.　In this lecture, we give an elementary proof of the result given by Schenzel that there are functorial isomorphisms between local cohomology groups and Čech cohomology groups, by using weakly proregular sequences. In [Sch03](https://www.mscand.dk/article/view/14399), he used notions of derived category theory in his proof, but we do not use them in this seminor.
+This seminar is scheduled for the autumn of 2021.　In this lecture, we introduce weakly proregular sequence by Schenzel to study whether there is an isomorphism between Čech cohomology and local cohomology. In [Schenzel's paper](https://www.mscand.dk/article/view/14399), He proved that for the Local cohomology and the Čech cohomology defined by the sequence $a_1$, the equivalence is that $a_1$ is weakly proregular and that there is an isomorphism between these cohomologies.
 
 <!---
 ## Links
