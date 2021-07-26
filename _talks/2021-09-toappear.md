@@ -2,7 +2,7 @@
 title: "Weakly proregular sequence and Čech, local cohomology"
 type: "Seminar Talk"
 venue: "慶應数理オンラインセミナー"
-date: "Undecided"
+date: "2021-09-31"
 location: "Online"
 link: "https://sites.google.com/keio.jp/mathscionlineseminar" 
 ---
