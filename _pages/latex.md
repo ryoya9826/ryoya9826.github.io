@@ -16,5 +16,5 @@ These are the LaTeX packages I developed.
  There are also some other macros that I have created personally. See the documentation for details. <br>
    - amsthmパッケージとascmacパッケージを組み合わせることにより，枠で囲われた定理環境を提供します．
 他にもいくつか個人的に作成したマクロを収録しています．詳細はドキュメントを見てください．
-- [myoverload package](https://github.com/ryoya9826/overload), last modified : 2021/08/31 <br>
+- [myoverload package](https://github.com/ryoya9826/overload), last modified : 2021/08/02 <br>
   - This package provides macros to overload the arguments of LaTeX macros. 
