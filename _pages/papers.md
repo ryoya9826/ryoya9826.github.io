@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 ## Publications
-in preparation
+Now submitting.
 ## Preprints
 - ### A note on weakly proregular sequences and local cohomology 
   - arXiv preprint, Link:[2105.07652](https://arxiv.org/abs/2105.07652).
