@@ -5,6 +5,7 @@ venue: 'Moroccan Journal of Algebra and Geometry with Applications'
 paperurl: 'https://ced.fst-usmba.ac.ma/p/mjaga/articles-in-press/'
 citation: 'Ryoya Ando, A note on weakly proregular sequence, Moroccan Journal of Algebra and Geometry with Applications (2021)'
 arxiv: '2105.07652'
+
 ---
 
 In this paper, we give an elementary proof of the result given by Schenzel that there are functorial iso-
