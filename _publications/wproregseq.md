@@ -1,10 +1,11 @@
 ---
 title: 'A none on weakly proregular sequence'
-excerpt: 'In this note, we give an elementary proof of the result given by Schenzel that there are functorial isomorphisms between local cohomology groups and Čech cohomology groups, by using weakly proregular sequences. In [Schenzel's paper](https://www.mscand.dk/article/view/14399), he used notions of derived category theory in his proof, but we do not use them in this paper.'
+excerpt: 'In this note, we give an elementary proof of the result given by Schenzel.'
 venue: 'Moroccan Journal of Algebra and Geometry with Applications'
 paperurl: 'https://ced.fst-usmba.ac.ma/p/mjaga/articles-in-press/'
 citation: 'Ryoya Ando, A note on weakly proregular sequence, Moroccan Journal of Algebra and Geometry with Applications (2021)'
-date: 2021-10-01'
+date: 2021-10-01
+arxiv: '2105.07652'
 
 ---
 
