@@ -1,15 +1,15 @@
 ---
-title: "A NOTE ON WEAKLY PROREGULAR SEQUENCE"
+title: "A none on weakly proregular sequence"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+excerpt: 'In this note, we give an elementary proof of the result given by Schenzel that there are functorial isomorphisms between local cohomology groups and Čech cohomology groups, by using weakly proregular sequences. In [Schenzel's paper](https://www.mscand.dk/article/view/14399), he used notions of derived category theory in his proof, but we do not use them in this paper.'
+venue: 'Moroccan Journal of Algebra and Geometry with Applications'
+paperurl: 'https://ced.fst-usmba.ac.ma/p/mjaga/articles-in-press/'
+citation: 'Ryoya Ando, A note on weakly proregular sequence, Moroccan Journal of Algebra and Geometry with Applications (2021)'
 ---
-This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+In this paper, we give an elementary proof of the result given by Schenzel that there are functorial iso-
+morphisms between local cohomology groups and ˇCech cohomology groups, by using weakly proregular
+sequences. The existence of these isomorphisms was well-known for Noetherian rings, but he generalised it
+to non-Noetherian rings and gave necessary and sufficient conditions for cohomology to coincide. In [Schenzel's paper](https://www.mscand.dk/article/view/14399), he
+used notions of derived category theory in his proof, but we do not use them in this paper. We give a proof
+within Abelian category theory.
