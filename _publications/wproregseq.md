@@ -9,6 +9,8 @@ arxiv: '2105.07652'
 
 ---
 
+## Comment
+
 In this paper, we give an elementary proof of the result given by Schenzel that there are functorial iso-
 morphisms between local cohomology groups and ˇCech cohomology groups, by using weakly proregular
 sequences. The existence of these isomorphisms was well-known for Noetherian rings, but he generalised it
