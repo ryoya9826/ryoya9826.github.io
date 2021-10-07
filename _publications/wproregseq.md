@@ -1,5 +1,5 @@
 ---
-title: 'A none on weakly proregular sequence'
+title: 'A note on weakly proregular sequence'
 excerpt: 'In this note, we give an elementary proof of the result given by Schenzel.'
 date: 2021-10-01
 venue: 'Moroccan Journal of Algebra and Geometry with Applications'
