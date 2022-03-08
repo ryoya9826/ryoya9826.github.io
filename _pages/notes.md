@@ -11,6 +11,10 @@ redirect_from:
 
 I do **NOT** guarantee the accuracy of these notes.
 
+## Thesis
+[Master thesis](/files/note/master_thesis.pdf) 
+
+
 ## Mathlog
 [Mathog](https://mathlog.info/) is a website that provides information sharing services specializing in mathematics (like a blog service). I am summarizing (in Japanese) a slightly different perspective on this site from the existing famous textbooks.
 - [Eisensteinの既約判定法について](https://mathlog.info/articles/2344), (Note on Eisenstein's criterion) どうも既約性の定義が文献によって怪しいので少しまとめました．知っている人には自明です．
