@@ -4,7 +4,7 @@ excerpt: 'In this note, we give an elementary proof of the result given by Schen
 date: 2022-04-01
 venue: 'Moroccan Journal of Algebra and Geometry with Applications'
 paperurl: 'https://ced.fst-usmba.ac.ma/p/mjaga/a-note-on-weakly-proregular-sequence/'
-citation: 'Ryoya Ando, A note on weakly proregular sequence, Moroccan Journal of Algebra and Geometry with Applications (2021)'
+citation: 'R. Ando, A note on weakly proregular sequence, Moroccan Journal of Algebra and Geometry with Applications, Vol. 1, pp. 98--107 (2022)'
 
 ---
 
