@@ -33,7 +33,7 @@ For more information , see [CV](https://ryoya9826.github.io/cv/).
 
 I am a managar of the following online seminars.
 
-慶應理科大オンラインセミナー　URL: https://sites.google.com/view/keio-rikadai-online-seminar/
+[慶應理科大オンラインセミナー](https://sites.google.com/view/keio-rikadai-online-seminar/)　(URL: [https://sites.google.com/view/keio-rikadai-online-seminar/](https://sites.google.com/view/keio-rikadai-online-seminar/)]
 
 <!--
 ### Thanks: 
