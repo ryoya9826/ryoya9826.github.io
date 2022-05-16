@@ -29,6 +29,12 @@ For more information , see [CV](https://ryoya9826.github.io/cv/).
 - Homological Conjecture
 - Mathematical logic (especially, Axiom of Choice and Grothendieck Universe)
 
+## Conference Activities
+
+I am a managar of the following online seminars.
+
+慶應理科大オンラインセミナー　URL: https://sites.google.com/view/keio-rikadai-online-seminar/
+
 <!--
 ### Thanks: 
  Kirie Yasuda for supporting English grammatically.
