@@ -22,7 +22,7 @@ I do **NOT** guarantee the accuracy of these notes.
 - 
 ## Others 
 - [ZFC+Uのおはなし](/files/note/ZFC+U.pdf), (About on ZFC+U, in Japanese) last modified : 2022/01/31 大学の研究室の卒業文集に（卒業しないにも関わらず）寄稿したものです．（安藤遼哉 (2022) 「ZFC+U のおはなし」，『2021 年度 東京理科大学理工学部数学科 大橋研究室卒業論文集』，101–158 頁，URL：https://ryoya9826.github.io/files/note/kaibunsyo.pdf ）
-- [可換環論の基礎（未完）](/files/note/ring.pdf), (Basics on commutative ring theory, in Japanece) last modified : 2022/05/19
+- [可換環論の基礎（未完）](/files/note/ring.pdf), (Basics on commutative ring theory, in Japanece) last modified : 2022/05/20
 - [ホモロジー代数いらずの Cohen–Macaulay 環の基礎](/files/note/CMwithoutHA.pdf), (Basics on Cohen-Macaulay rings without homology algebra) 
 last modified : 2021/05/14　ホモロジー代数を一切用いずにCM環が強鎖状(universally catenary)であることを証明することを１つの目標としたノートです．
 - スペクトラル空間の基礎 : under constructions.
