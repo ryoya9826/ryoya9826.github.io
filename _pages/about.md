@@ -28,7 +28,7 @@ For more information , see [CV](https://ryoya9826.github.io/cv/).
 - Derived category
 - Homological Conjecture
 - Mathematical logic (especially, Axiom of Choice and Grothendieck Universe)
-- Competitive programming (AtCoder:[Ando_CA](https://atcoder.jp/users/Ando_CA?lang=en)
+- Competitive programming (AtCoder : [Ando_CA](https://atcoder.jp/users/Ando_CA?lang=en))
 
 ## Conference Activities
 
