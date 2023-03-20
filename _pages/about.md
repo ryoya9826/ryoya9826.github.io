@@ -13,7 +13,7 @@ Studying on Commutative Algebra, especially Non-Noetherian rings.
 
 This page is currently under construction! 
 
-E-mail: ryoya31026@gmail.com  (<span style="color: red; ">Deprecated</span> andou [at] ma.noda.tus.ac.jp )
+E-mail: ryoya31026 [at] gmail.com  (<span style="color: red; ">Deprecated</span> andou [at] ma.noda.tus.ac.jp )
 
 For more information , see [CV](https://ryoya9826.github.io/cv/).
 ## Research Areas
