@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am Ryoya ANDO (安藤 遼哉 in Japanecse), a doctoral student at [Tokyo University of Science (TUS)](https://www.tus.ac.jp/en/fac/riko/math.html).
+I am Ryoya ANDO (安藤 遼哉 in Japanecse), a PhD student at [Tokyo University of Science (TUS)](https://www.tus.ac.jp/en/fac/riko/math.html).
 
 Studying on Commutative Algebra, especially Non-Noetherian rings.
 
