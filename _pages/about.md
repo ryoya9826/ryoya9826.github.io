@@ -26,9 +26,9 @@ For more information , see [CV](https://ryoya9826.github.io/cv/).
 ---
 - Non Noetherian ring (Extension of theory about Noetherian rings to NON-Noetherian rings)
 - Derived category
-- Homological Conjecture
+- Homological Conjectures
 - Mathematical logic (especially, Axiom of Choice and Grothendieck Universe)
-- Competitive programming (AtCoder : [Ando_CA](https://atcoder.jp/users/Ando_CA?lang=en))
+- Quantum information technology
 
 ## Conference Activities
 
