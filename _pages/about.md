@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am Ryoya ANDO (安藤 遼哉 in Japanecse), a PhD student at [Tokyo University of Science (TUS)](https://www.tus.ac.jp/en/fac/riko/math.html).
+I am Ryoya ANDO (安藤 遼哉 in Japanecse), a data scientist at [SKILLUP NeXt, LtD.](https://skillup-next.co.jp/) (Human Resource Development Company)in Japan, and a PhD student at [Tokyo University of Science (TUS)](https://www.tus.ac.jp/en/fac/riko/math.html).
 
 Studying on Commutative Algebra, especially Non-Noetherian rings.
 
