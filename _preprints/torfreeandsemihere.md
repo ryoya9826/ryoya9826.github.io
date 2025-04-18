@@ -2,8 +2,9 @@
 title: 'On torsion-free modules and semi-hereditary rings'
 excerpt: 'We prove several results concerning the structure theory of the class of semi-hereditary rings, focusing on the relationship between semi-hereditary rings and the flatness of torsion-free modules.'
 date: 2024-12-21
-venue: 'Preprints, Submitted'
+venue: 'Preprints'
 arxiv: '2412.16618'
+submitted: true
 
 
 ---
