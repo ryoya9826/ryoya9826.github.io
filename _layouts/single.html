@@ -42,7 +42,12 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.collection == 'publications' %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%B %Y" }}. Links: <a href="{{ page.paperurl }}">journal</a>, <a href="https://arxiv.org/abs/{{ page.arxiv }}">arXiv:{{ page.arxiv }}</a> </p>
+          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%B %Y" }}. Links: <a href="{{ page.paperurl }}">journal</a>
+            <!--
+            ,
+             <a href="https://arxiv.org/abs/{{ post.arxiv }}">arXiv:{{ post.arxiv }}</a> 
+           --> 
+          </p>
         {% elsif page.collection == 'preprints' %}
           <p>arXiv preprint, {{ page.date | default: "1900-01-01" | date: "%B %Y" }}. Link: <a href="https://arxiv.org/abs/{{ page.arxiv }}">arXiv:{{ page.arxiv }}</a> </p>
         {% elsif page.date %}
