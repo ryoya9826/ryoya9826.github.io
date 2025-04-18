@@ -47,7 +47,7 @@
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%B %Y" }}. Links: <a href="{{ post.paperurl }}">journal</a>, <a href="https://arxiv.org/abs/{{ post.arxiv }}">arXiv:{{ post.arxiv }}</a> </p>
         {% elsif post.collection == 'preprints' %}
         <p>
-          arXiv preprint{% if post.submitted %} <strong>(Submitted)</strong>{% endif %}, 
+          arXiv preprint{% if post.submitted %} (Submitted){% endif %}, 
           {{ post.date | default: "1900-01-01" | date: "%B %Y" }}.
           Link: <a href="https://arxiv.org/abs/{{ post.arxiv }}">arXiv:{{ post.arxiv }}</a>
         </p>
