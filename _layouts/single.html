@@ -51,7 +51,7 @@ layout: default
         {% elsif page.collection == 'preprints' %}
           <p> 
             arXiv preprint
-            {% if post.accepted %}
+            {% if page.accepted %}
               (Accepted: To appear in {{ post.accepted }}.)
             {% endif %},
             {{ page.date | default: "1900-01-01" | date: "%B %Y" }}. 
