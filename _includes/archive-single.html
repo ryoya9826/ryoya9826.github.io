@@ -52,7 +52,12 @@
           </p>
         {% elsif post.collection == 'preprints' %}
         <p>
-          arXiv preprint{% if post.submitted %} (Submitted){% endif %}, 
+          arXiv preprint
+          {% if post.accepted %}
+            (Accepted: To appear in {{ post.accepted }}.)
+          {% elsif post.submitted %}
+            (Submitted)
+          {% endif %},
           {{ post.date | default: "1900-01-01" | date: "%B %Y" }}.
           Link: <a href="https://arxiv.org/abs/{{ post.arxiv }}">arXiv:{{ post.arxiv }}</a>
         </p>

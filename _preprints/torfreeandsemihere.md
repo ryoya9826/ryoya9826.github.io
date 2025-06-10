@@ -5,7 +5,7 @@ date: 2024-12-21
 venue: 'Preprints'
 arxiv: '2412.16618'
 submitted: true
-
+accepted: Tokyo J. Math
 
 ---
 
