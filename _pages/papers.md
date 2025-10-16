@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Papers"
+title: "Publications"
 permalink: /papers/
 author_profile: true
 redirect_from:
@@ -20,4 +20,10 @@ redirect_from:
 {% for post in site.preprints reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+# Books
+
+{% for post in site.books reversed %}
+  {% include archive-single.html %}
+{% endfor %}{% endraw %}
 

@@ -185,6 +185,9 @@ collections:
   preprints:
     output: true
     permalink: /:collection/:path/
+  books:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -235,6 +238,15 @@ defaults:
   - scope:
       path: ""
       type: preprints
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _books
+  - scope:
+      path: ""
+      type: books
     values:
       layout: single
       author_profile: true
