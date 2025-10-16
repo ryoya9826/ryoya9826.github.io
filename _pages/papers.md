@@ -22,11 +22,10 @@ redirect_from:
 {% endfor %}
 
 
-{% raw %}# Books 
+# Books 
 
-{% comment %}
 {% for post in site.books reversed %}
   {% include archive-single.html %}
 {% endfor %}
-{% endcomment %}{% endraw %}
+
 
