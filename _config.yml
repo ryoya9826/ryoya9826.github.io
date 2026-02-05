@@ -188,6 +188,9 @@ collections:
   books:
     output: true
     permalink: /:collection/:path/
+  miscellaneous:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -247,6 +250,15 @@ defaults:
   - scope:
       path: ""
       type: books
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _miscellaneous
+  - scope:
+      path: ""
+      type: miscellaneous
     values:
       layout: single
       author_profile: true

@@ -29,3 +29,9 @@ redirect_from:
 {% endfor %}
 
 
+# Miscellaneous
+
+{% for post in site.miscellaneous reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
