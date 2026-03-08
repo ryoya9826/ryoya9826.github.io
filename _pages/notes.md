@@ -22,7 +22,7 @@ I do **NOT** guarantee the accuracy of these notes.
 - [素イデアル定理と選択公理](https://mathlog.info/articles/3777), (The Prime Ideal Theorem and the Axiom of Choice) [Math Advent Calender 2022](https://adventar.org/calendars/7662)用の記事です．
 - [ホモロジカル予想のおはなし](https://mathlog.info/articles/HIpHMIdclWbwy7uIR7m3), (Tale about homological conjecture) [Math Advent Calendar 2023](https://adventar.org/calendars/8530)用の記事です．
 ## Others 
-- [可換環論の基礎（未完）](/files/note/ring.pdf), (Basics on commutative ring theory, in Japanece) last modified : 2025/02/06 （誤植修正のみです）
+- [可換環論の基礎（未完）](/files/note/ring.pdf), (Basics on commutative ring theory, in Japanece) last modified : 2025/03/07 （誤植修正）
 - [ホモロジー代数いらずの Cohen–Macaulay 環の基礎](/files/note/CMwithoutHA.pdf), (Basics on Cohen-Macaulay rings without homology algebra, in Japanese) 
 last modified : 2021/05/14　ホモロジー代数を一切用いずにCM環が強鎖状(universally catenary)であることを証明することを１つの目標としたノートです．
 - スペクトラル空間の基礎 : under constructions.
