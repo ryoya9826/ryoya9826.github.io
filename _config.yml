@@ -9,8 +9,8 @@
 locale                   : "ja-JP"
 title                    : "Ryoya Ando"
 title_separator          : "-"
-name                     : &name "Ryoya Ando"
-description              : &description "Data Scientist, SKILLUP NeXt, Ltd. / PhD (Doctor of Science) from Department of Mathematics, Faculty of Science and Technology, Tokyo University of Science"
+name                     : &name "Ryoya Ando, Ph.D."
+description              : &description "Manager and Data Scientist, SKILLUP NeXt, Ltd. / Ph.D. (Doctor of Science) from Department of Mathematics, Faculty of Science and Technology, Tokyo University of Science"
 url                      : https://ryoya9826.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ryoya9826/ryoya9826.github.io"
@@ -81,14 +81,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ryoya Ando"
+  name             : "Ryoya Ando, Ph.D."
   avatar           : "profile.png"
-  bio              : "Data Scientist at SKILLUP NeXt, Ltd. / PhD (Doctor of Science)"
+  bio              : "Manager and Data Scientist at SKILLUP NeXt, Ltd."
   location         : "Chiba, Japan"
   employer         :
   pubmed           :
   googlescholar    : 
-  email            : "andou@ma.noda.tus.ac.jp"
+  email            : "ryoya31026@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
