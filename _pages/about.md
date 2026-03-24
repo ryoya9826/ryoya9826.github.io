@@ -7,15 +7,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am Ryoya ANDO (安藤 遼哉 in Japanecse), a data scientist at [SKILLUP NeXt, LtD.](https://skillup-next.co.jp/) (Human Resource Development Company)in Japan, and a PhD student at [Tokyo University of Science (TUS)](https://www.tus.ac.jp/en/fac/riko/math.html).
+I am Ryoya ANDO (安藤 遼哉 in Japanese), a manager and data scientist at [SKILLUP NeXt, Ltd.](https://skillup-next.co.jp/) (Human Resource Development Company) in Japan. I received my PhD (Doctor of Science) from [Tokyo University of Science (TUS)](https://www.tus.ac.jp/en/fac/riko/math.html).
 
-Studying on Commutative Algebra, especially Non-Noetherian rings.
+My research focuses on Commutative Algebra, especially non-Noetherian rings.
 
 This page is currently under construction! 
 
 E-mail: ryoya31026 [at] gmail.com  (<span style="color: red; ">Deprecated</span> andou [at] ma.noda.tus.ac.jp )
 
-For more information , see [CV](https://ryoya9826.github.io/cv/).
+For more information, see my [CV](https://ryoya9826.github.io/cv/).
 ## Research Areas
 ---
 - Commutative Algebra (Commutative ring)
@@ -24,20 +24,14 @@ For more information , see [CV](https://ryoya9826.github.io/cv/).
 
 ## Interests
 ---
-- Non Noetherian ring (Extension of theory about Noetherian rings to NON-Noetherian rings)
-- Derived category
-- Homological Conjectures
-- Mathematical logic (especially, Axiom of Choice and Grothendieck Universe)
+- Non-Noetherian rings (Extending the theory of Noetherian rings to non-Noetherian settings)
+- Homological conjectures
+- Mathematical logic (especially the Axiom of Choice and Grothendieck universes)
 - Quantum information technology
 
 ## Conference Activities
 
-I am a managar of the following online seminars.
+I am a co-organizer of the following online seminar.
 
 [慶應理科大オンラインセミナー](https://sites.google.com/view/keio-rikadai-online-seminar/)　(URL: [https://sites.google.com/view/keio-rikadai-online-seminar/](https://sites.google.com/view/keio-rikadai-online-seminar/))
-
-<!--
-### Thanks: 
- Kirie Yasuda for supporting English grammatically.
- -->
 
