@@ -32,5 +32,5 @@ For more information, see my [CV](https://ryoya9826.github.io/cv/).
 
 I am a co-organizer of the following online seminar.
 
-[慶應理科大オンラインセミナー](https://sites.google.com/view/keio-rikadai-online-seminar/)　(URL: [https://sites.google.com/view/keio-rikadai-online-seminar/](https://sites.google.com/view/keio-rikadai-online-seminar/))
+[慶應理科大オンラインセミナー](https://sites.google.com/view/keio-rikadai-online-seminar/)
 
