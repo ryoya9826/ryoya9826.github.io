@@ -11,4 +11,4 @@ accepted: Tokyo J. Math
 
 ## Comment
 
-The class of semi-hereditary rings is an important class of rings in theories that do not assume the Noetherian condition, such as perfectoid ring theory. We prove several results concerning the structure theory of this class, focusing on the relationship between semi-hereditary rings and the flatness of torsion-free modules. We also consider Shimomoto's problem concerning the flatness of the Frobenius map.
+Semi-hereditary rings form an important class in commutative algebra when the Noetherian hypothesis is not assumed—for example in the study of perfectoid rings. We prove several results on the structure of this class, focusing on the relationship between semi-hereditary rings and flatness of torsion-free modules. We also discuss Shimomoto's problem on flatness of the Frobenius map.
