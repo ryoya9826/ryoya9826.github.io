@@ -2,7 +2,6 @@
 layout: archive
 permalink: /tags/
 title: "Posts by Tags"
-author_profile: true
 ---
 
 {% include base_path %}
