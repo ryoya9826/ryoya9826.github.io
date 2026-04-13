@@ -20,4 +20,4 @@ These are the LaTeX packages I developed.
   
 - [ltMermaid / ltmermaid.sty](https://github.com/ryoya9826/ltMermaid), last modified : 2026/04/08 (README in English and Japanese)<br>
   - This package defines the `mermaid` environment: diagram sources are written to disk, the Mermaid CLI (`mmdc`) renders **PDF** (vector), and the result is included with `\includegraphics`. **LuaLaTeX**, **`-shell-escape`**, and **Node.js** with **`mmdc`** or **`npx`** (plus Mermaid CLI’s headless Chromium) are required.<br>
-  - Mermaidの図をLaTeXに埋め込みます．ソースをディスクに書き出し，Mermaid CLI（`mmdc`）でPDFを生成して`\includegraphics`で取り込みます．LuaLaTeX を `-shell-escape` で実行する必要があり，また Node.js／`mmdc`（または`npx`）が必要です．詳細はREADMEを参照してください．
+  - LaTeX コンパイル時に Mermaid図を同時にコンパイルし，PDFに出力します．ソースをディスクに書き出し，Mermaid CLI（`mmdc`）でPDFを生成して`\includegraphics`で取り込むため，LuaLaTeX を `-shell-escape` で実行する必要があります．また Node.js／`mmdc`（または`npx`）が必要です．詳細はレポジトリを参照してください．
