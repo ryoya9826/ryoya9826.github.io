@@ -2,8 +2,7 @@
 layout: archive
 title: "Notes"
 permalink: /notes/
-redirect_from:
-  - /resume
+last_modified_at: 2026-04-21
 ---
 
 {% include base_path %}

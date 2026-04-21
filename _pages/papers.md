@@ -2,8 +2,7 @@
 layout: archive
 title: "Publications"
 permalink: /papers/
-redirect_from:
-  - /resume
+last_modified_at: 2026-04-21
 ---
 
 {% include base_path %}

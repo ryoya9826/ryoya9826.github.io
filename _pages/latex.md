@@ -2,8 +2,7 @@
 layout: archive
 title: "LaTeX Packages"
 permalink: /latex/
-redirect_from:
-  - /resume
+last_modified_at: 2026-04-21
 ---
 
 {% include base_path %}

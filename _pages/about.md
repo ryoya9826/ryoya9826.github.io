@@ -6,6 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+last_modified_at: 2026-04-21
 ---
 I am Ryoya ANDO (安藤 遼哉 in Japanese), a manager and data scientist at [SKILLUP NeXt, Ltd.](https://skillup-next.co.jp/). I received my PhD (Doctor of Science) from [Tokyo University of Science (TUS)](https://www.tus.ac.jp/en/fac/riko/math.html).
 

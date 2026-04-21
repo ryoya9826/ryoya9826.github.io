@@ -5,6 +5,7 @@ excerpt: "This is a page not in th emain menu"
 redirect_from: 
   - "/nmp/"
   - "/nmp.html"
+sitemap: false
 ---
 
 This is a page not in the menu. You can use markdown in this page.
