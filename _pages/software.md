@@ -2,6 +2,8 @@
 layout: archive
 title: "Software & Tools"
 permalink: /software/
+redirect_from:
+  - /latex/
 last_modified_at: 2026-04-25
 ---
 
