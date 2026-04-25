@@ -12,8 +12,8 @@ main:
   - title: "Notes"
     url: /notes/
     
-  - title: "LaTeX Packages"
-    url: /latex/
+  - title: "Software & Tools"
+    url: /software/
     
   - title: "CV"
     url: /cv/
