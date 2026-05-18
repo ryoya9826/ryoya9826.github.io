@@ -20,7 +20,7 @@ These are the LaTeX packages I developed.
 - [overload / myoverload.sty](https://github.com/ryoya9826/overload), last modified : 2026/04/08 (README in Japanese)
   - This small LaTeX2e package lets one control sequence dispatch on how many arguments were given (0–9), using `\newoverload`, `\renewoverload`, `\addoverload`, and a trailing `\enddelim` terminator.
   
-- [ltMermaid / `mermaid.sty` and `ltmermaid.sty`](https://github.com/ryoya9826/ltMermaid) ([CTAN](https://ctan.org/pkg/ltmermaid)), last modified : 2026/04/16 (README in English)
+- [ltMermaid / `mermaid.sty` and `ltmermaid.sty`](https://github.com/ryoya9826/ltMermaid) ([CTAN](https://ctan.org/pkg/ltmermaid)), last modified : 2026/05/14 (README in English)
   - This repository provides two LaTeX packages to embed Mermaid diagrams: `mermaid` works with pdfLaTeX / XeLaTeX / upLaTeX / LuaLaTeX, while `ltmermaid` is a LuaLaTeX-native implementation. Both write diagram sources to disk, invoke the Mermaid CLI (`mmdc`) to render vector PDF files, and include the result with `\includegraphics`. `-shell-escape` and Mermaid CLI (`mmdc` or `npx -y @mermaid-js/mermaid-cli`) are required.
 
 ### BibTeX
