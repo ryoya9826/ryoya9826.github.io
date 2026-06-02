@@ -16,9 +16,9 @@ last_modified_at: 2026-04-21
     * Collaborative development of quantum education program with [Okinawa Institute of Science and Technology (OIST)](https://www.oist.jp/)
     * [Workshop on Quantum Sensors](/talks/2025-08-18/) at EXPO 2025 Osaka, Theme Weeks "Entangle Moment" (Aug 2025) \[[official page](https://www.qst.go.jp/site/entangle-moment-en/stage.html#18-1)\]
 
-* Apr 2022 – Present : [SKILLUP NeXt, Ltd.](https://skillup-next.co.jp/)
+* Apr 2023 – Present : [SKILLUP NeXt, Ltd.](https://skillup-next.co.jp/)
   * Dec 2025 – Present : Manager and Data Scientist
-  * Apr 2022 – Nov 2025 : Data Scientist
+  * Apr 2023 – Nov 2025 : Data Scientist
     * Instructor for corporate AI and DX training programs
     * AI development consulting
     * AI solution development and delivery
