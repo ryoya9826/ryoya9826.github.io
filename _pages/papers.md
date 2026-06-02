@@ -7,7 +7,7 @@ last_modified_at: 2026-04-21
 
 {% include base_path %}
 
-# Publications (Refereed)
+# Refereed papers
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}

@@ -14,13 +14,13 @@ I do **NOT** guarantee the accuracy of these notes.
 
 
 ## Mathlog
-[Mathog](https://mathlog.info/) is a website that provides information sharing services specializing in mathematics (like a blog service). I am summarizing (in Japanese) a slightly different perspective on this site from the existing famous textbooks.
+[Mathlog](https://mathlog.info/) is a website that provides information sharing services specializing in mathematics (like a blog service). I am summarizing (in Japanese) a slightly different perspective on this site from the existing famous textbooks.
 - [Eisensteinの既約判定法について](https://mathlog.info/articles/2344), (Note on Eisenstein's criterion) どうも既約性の定義が文献によって怪しいので少しまとめました．知っている人には自明です．
 - [付値環をいっぱい作ろう！（オマケ：Hartshorneの演習問題の小咄）](https://mathlog.info/articles/2883), (Let's make lots of valuation rings!) [Math Advent Calender 2021](https://adventar.org/calendars/6146)用の記事です．
 - [素イデアル定理と選択公理](https://mathlog.info/articles/3777), (The Prime Ideal Theorem and the Axiom of Choice) [Math Advent Calender 2022](https://adventar.org/calendars/7662)用の記事です．
 - [ホモロジカル予想のおはなし](https://mathlog.info/articles/HIpHMIdclWbwy7uIR7m3), (Tale about homological conjecture) [Math Advent Calendar 2023](https://adventar.org/calendars/8530)用の記事です．
 ## Others 
-- [可換環論の基礎（未完）](/files/note/ring.pdf), (Basics on commutative ring theory, in Japanece) last modified : 2025/03/24 （誤植修正）
+- [可換環論の基礎（未完）](/files/note/ring.pdf), (Basics on commutative ring theory, in Japanese) last modified: 2025/03/24 （誤植修正）
 - [ホモロジー代数いらずの Cohen–Macaulay 環の基礎](/files/note/CMwithoutHA.pdf), (Basics on Cohen-Macaulay rings without homology algebra, in Japanese) 
-last modified : 2021/05/14　ホモロジー代数を一切用いずにCM環が強鎖状(universally catenary)であることを証明することを１つの目標としたノートです．
+last modified: 2021/05/14　ホモロジー代数を一切用いずにCM環が強鎖状(universally catenary)であることを証明することを１つの目標としたノートです．
 - スペクトラル空間の基礎 : under constructions.

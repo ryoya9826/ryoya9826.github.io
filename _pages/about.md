@@ -14,17 +14,15 @@ My research focuses on Commutative Algebra, especially non-Noetherian rings.
 
 This page is currently under construction! 
 
-E-mail: ryoya31026 [at] gmail.com (<span style="color: red; ">Deprecated</span> andou [at] ma.noda.tus.ac.jp )
+E-mail: ryoya31026 [at] gmail.com (~~andou [at] ma.noda.tus.ac.jp~~ Deprecated)
 
 For more information, see my [CV](https://ryoya9826.github.io/cv/).
 ## Research Areas
----
 - Commutative Algebra (Commutative ring)
 - Homological Algebra
 - Algebraic Geometry
 
 ## Interests
----
 - Non-Noetherian rings (Extending the theory of Noetherian rings to non-Noetherian settings)
 - Homological conjectures
 - Quantum information technology 

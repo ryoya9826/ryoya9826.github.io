@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: page
 title: "CV"
 permalink: /cv/
 redirect_from:
@@ -11,20 +11,20 @@ last_modified_at: 2026-04-21
 
 ## Professional Experience
 
-* Apr 2025 -- Present : Principal Co-Investigator (Q-STAR)
+* Apr 2025 – Present : Principal Co-Investigator (Q-STAR)
   * [SIP3: Promoting Application of Advanced Quantum Technologies to Social Challenges](https://www.qst.go.jp/site/sip3-en/quantum-d.html)
   * Innovation Creation Platform, R&D Subject D-2: Development/Practice of Educational Program
 
-* 2022 -- Present : [SKILLUP NeXt, Ltd.](https://skillup-next.co.jp/)
-  * Dec 2025 -- Present : Manager and Data Scientist
-  * 2022 -- Nov 2025    : Data Scientist
+* 2022 – Present : [SKILLUP NeXt, Ltd.](https://skillup-next.co.jp/)
+  * Dec 2025 – Present : Manager and Data Scientist
+  * 2022 – Nov 2025    : Data Scientist
 
 ## Education
-* 2022 -- 2026    : Doctoral Program in Mathematics, [Faculty of Science and Technology, Tokyo University of Science](https://www.tus.ac.jp/en/fac/riko/math.html)
+* 2022 – 2026    : Doctoral Program in Mathematics, [Faculty of Science and Technology, Tokyo University of Science](https://www.tus.ac.jp/en/fac/riko/math.html)
 
-* 2020 -- 2022    : Master's Program in Mathematics, [Faculty of Science and Technology, Tokyo University of Science](https://www.tus.ac.jp/en/fac/riko/math.html)
+* 2020 – 2022    : Master's Program in Mathematics, [Faculty of Science and Technology, Tokyo University of Science](https://www.tus.ac.jp/en/fac/riko/math.html)
 
-* 2016 -- 2020    : Bachelor's Program in Mathematics, [Faculty of Science and Technology, Tokyo University of Science](https://www.tus.ac.jp/en/fac/riko/math.html)
+* 2016 – 2020    : Bachelor's Program in Mathematics, [Faculty of Science and Technology, Tokyo University of Science](https://www.tus.ac.jp/en/fac/riko/math.html)
 
 ## Degree
 
