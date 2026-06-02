@@ -11,7 +11,7 @@ last_modified_at: 2026-04-21
 
 ## Professional Experience
 
-* Dec 2023 – Present : Sub-leader, Human Resource Development WG — [Q-STAR](https://qstar.jp/)
+* Dec 2023 – Present : Sub-leader, Human Resource Development WG — [Q-STAR](https://qstar.jp/en)
   * Apr 2024 – Present : Principal Co-Investigator, [SIP3: Promoting Application of Advanced Quantum Technologies to Social Challenges](https://www.qst.go.jp/site/sip3-en/quantum-d.html) — Innovation Creation Platform, R&D Subject D-2: Development/Practice of Educational Program, with OIST and SKILLUP NeXt
     * Collaborative development of quantum education program with [Okinawa Institute of Science and Technology (OIST)](https://www.oist.jp/)
     * [Workshop on Quantum Sensors](/talks/2025-08-18/) at EXPO 2025 Osaka, Theme Weeks "Entangle Moment" (Aug 2025) \[[official page](https://www.qst.go.jp/site/entangle-moment-en/stage.html#18-1)\]
@@ -23,7 +23,7 @@ last_modified_at: 2026-04-21
     * AI development consulting
     * AI solution development and delivery
   * Apr 2025 – Present : Researcher, [BRIDGE Program](https://www.qst.go.jp/site/bridge/r7-02-bridge-r7.html) — Quantum Human Resource Education Ecosystem (FY2025–2027), with Kyushu University and Q-STAR
-    * Development of [Quantum Literacy Standard (QSS-L) ver.1.0](https://qstar.jp/wp-content/uploads/%E9%87%8F%E5%AD%90%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC%E6%A8%99%E6%BA%96ver.1.0.pdf) with [Q-STAR](https://qstar.jp/) ([press release](https://prtimes.jp/main/html/rd/p/000000010.000128094.html))
+    * Development of [Quantum Literacy Standard (QSS-L) ver.1.0](https://qstar.jp/wp-content/uploads/%E9%87%8F%E5%AD%90%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC%E6%A8%99%E6%BA%96ver.1.0.pdf) with [Q-STAR](https://qstar.jp/en) ([press release](https://prtimes.jp/main/html/rd/p/000000010.000128094.html))
 
 * Apr 2020 – Mar 2023 : Teaching & Research Assistant — [Tokyo University of Science](https://www.tus.ac.jp/en/)
   * Research Assistant, supervised by [Prof. Hisanori Ohashi](https://www.ma.noda.tus.ac.jp/u/oh/index.html), Nov 2022 – Mar 2023
