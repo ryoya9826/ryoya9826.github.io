@@ -11,11 +11,10 @@ last_modified_at: 2026-04-21
 
 ## Professional Experience
 
-* Apr 2025 – Present : Principal Co-Investigator (Q-STAR)
-  * [SIP3: Promoting Application of Advanced Quantum Technologies to Social Challenges](https://www.qst.go.jp/site/sip3-en/quantum-d.html)
-  * Innovation Creation Platform, R&D Subject D-2: Development/Practice of Educational Program
-  * Collaborative development of quantum education program with [Okinawa Institute of Science and Technology (OIST)](https://www.oist.jp/)
-  * [Workshop on Quantum Sensors](/talks/2025-08-18/) at EXPO 2025 Osaka, Theme Weeks "Entangle Moment" (Aug 2025) \[[official page](https://www.qst.go.jp/site/entangle-moment-en/stage.html#18-1)\]
+* Dec 2023 – Present : Sub-leader, Human Resource Development WG — [Q-STAR](https://qstar.jp/)
+  * Apr 2024 – Present : Principal Co-Investigator, [SIP3: Promoting Application of Advanced Quantum Technologies to Social Challenges](https://www.qst.go.jp/site/sip3-en/quantum-d.html) — Innovation Creation Platform, R&D Subject D-2: Development/Practice of Educational Program, with OIST and SKILLUP NeXt
+    * Collaborative development of quantum education program with [Okinawa Institute of Science and Technology (OIST)](https://www.oist.jp/)
+    * [Workshop on Quantum Sensors](/talks/2025-08-18/) at EXPO 2025 Osaka, Theme Weeks "Entangle Moment" (Aug 2025) \[[official page](https://www.qst.go.jp/site/entangle-moment-en/stage.html#18-1)\]
 
 * Apr 2022 – Present : [SKILLUP NeXt, Ltd.](https://skillup-next.co.jp/)
   * Dec 2025 – Present : Manager and Data Scientist
