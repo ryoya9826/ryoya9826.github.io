@@ -5,6 +5,7 @@ venue: '第19回数学総合若手研究集会 : 数学の交叉点, 北海道�
 paperurl: 'https://hdl.handle.net/2115/88707'
 paperurltext: 'HUSCAP'
 citation: 'R. Ando, "Noetherとは限らない可換環上のホモロジー代数について," Hokkaido Univ. Technical Report Series in Mathematics, vol. 184, Proc. 19th Mathematics Conference for Young Researchers (2023).'
+excerpt: ""
 ---
 
 ## 概要

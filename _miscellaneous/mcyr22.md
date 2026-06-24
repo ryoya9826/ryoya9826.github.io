@@ -5,6 +5,7 @@ venue: '第22回数学総合若手研究集会 : 数学の交叉点, 北海道�
 paperurl: 'https://hdl.handle.net/2115/99275'
 paperurltext: 'HUSCAP'
 citation: 'R. Ando, "Generalizations of Regular Sequences and Grade, and Problems Related to Applications," Hokkaido Univ. Technical Report Series in Mathematics, vol. 191, Proc. 22nd Mathematics Conference for Young Researchers (2026).'
+excerpt: ""
 ---
 
 ## 概要
