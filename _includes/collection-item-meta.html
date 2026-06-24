@@ -26,7 +26,7 @@
 </p>
 {% elsif item.collection == 'miscellaneous' %}
 <p>Published in <i>{{ item.venue }}</i>, {{ item.date | default: "1900-01-01" | date: "%B %Y" }}. Link: <a
-    href="{{ item.paperurl }}">PDF</a>
+    href="{{ item.paperurl }}">{{ item.paperurltext | default: "PDF" }}</a>
 </p>
 {% elsif item.date %}
 <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{
