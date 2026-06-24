@@ -1,6 +1,6 @@
 ---
 title: 'ZFC+Uのおはなし'
-excerpt: '大学の研究室の卒業文集に寄稿したものです。'
+excerpt: '大学の研究室の後輩の卒業文集に寄稿したものです。'
 date: 2022-01-31
 venue: '2021年度 東京理科大学理工学部数学科 大橋研究室卒業論文集'
 paperurl: 'https://ryoya9826.github.io/files/note/ZFC+U.pdf'
