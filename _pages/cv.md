@@ -38,6 +38,7 @@ last_modified_at: 2026-04-21
 * Apr 2022 – Mar 2026 : Doctoral Program in Mathematics, [Faculty of Science and Technology, Tokyo University of Science](https://www.tus.ac.jp/en/fac/riko/math.html)
   * Doctor of Science, March 2026
   * Supervisor: [Hisanori Ohashi](https://www.ma.noda.tus.ac.jp/u/oh/index.html)
+  * Thesis: [On Homological Algebra for Commutative Rings without Noetherian Conditions](https://doi.org/10.20604/0002000570)
 
 * Apr 2020 – Mar 2022 : Master's Program in Mathematics, [Faculty of Science and Technology, Tokyo University of Science](https://www.tus.ac.jp/en/fac/riko/math.html)
   * Master of Science, March 2022

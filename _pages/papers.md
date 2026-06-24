@@ -7,6 +7,13 @@ last_modified_at: 2026-04-21
 
 {% include base_path %}
 
+# Thesis
+
+{% for post in site.theses reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+
 # Refereed papers
 
 {% for post in site.publications reversed %}

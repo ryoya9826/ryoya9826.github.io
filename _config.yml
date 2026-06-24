@@ -190,6 +190,9 @@ collections:
   miscellaneous:
     output: true
     permalink: /:collection/:path/
+  theses:
+    output: true
+    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -255,6 +258,15 @@ defaults:
   - scope:
       path: ""
       type: miscellaneous
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comments: true
+  # _theses
+  - scope:
+      path: ""
+      type: theses
     values:
       layout: single
       author_profile: false
