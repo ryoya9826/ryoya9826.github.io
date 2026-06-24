@@ -7,13 +7,6 @@ last_modified_at: 2026-04-21
 
 {% include base_path %}
 
-# Thesis
-
-{% for post in site.theses reversed %}
-  {% include archive-single.html %}
-{% endfor %}
-
-
 # Refereed papers
 
 {% for post in site.publications reversed %}
@@ -27,9 +20,9 @@ last_modified_at: 2026-04-21
 {% endfor %}
 
 
-# Books 
+# Thesis
 
-{% for post in site.books reversed %}
+{% for post in site.theses reversed %}
   {% include archive-single.html %}
 {% endfor %}
 
@@ -37,6 +30,13 @@ last_modified_at: 2026-04-21
 # Miscellaneous
 
 {% for post in site.miscellaneous reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+
+# Books 
+
+{% for post in site.books reversed %}
   {% include archive-single.html %}
 {% endfor %}
 
