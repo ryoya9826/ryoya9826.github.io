@@ -1,6 +1,6 @@
 ---
 title: 'Polynomial Extensions of Non-Noetherian Cohen--Macaulay Rings and Torsion-Free Localization'
-excerpt: 'We study the behavior of HMCM rings (Cohen--Macaulay rings in the sense of Hamilton--Marley) under polynomial extensions, and characterize when localization preserves torsion-freeness of modules.'
+excerpt: 'We show that the HMCM property (Cohen--Macaulay rings in the sense of Hamilton--Marley) is not preserved under polynomial extensions in general, and characterize when localization preserves torsion-freeness of modules.'
 date: 2026-06-24
 venue: 'Preprints'
 arxiv: '2606.25384'
