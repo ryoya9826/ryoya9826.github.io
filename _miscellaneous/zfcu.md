@@ -1,5 +1,5 @@
 ---
-title: 'ZFC+Uのおはなし'
+title: 'ZFC+Uのおはなし (An Invitation to ZFC+U)'
 excerpt: '大学の研究室の後輩の卒業文集に寄稿したものです。'
 date: 2022-01-31
 venue: '2021年度 東京理科大学理工学部数学科 大橋研究室卒業論文集'
@@ -20,3 +20,4 @@ Regarding the numerous references cited in this article, since many are quite ol
 This article was written as a contribution to the Academic Year 2021 graduation anthology of the Ohashi Laboratory at the Tokyo University of Science. While this anthology is planned as a collection of graduation theses for undergraduate students—and I have no direct acquaintance with most of the undergraduates—I took this as a good opportunity to write this paper with enjoyment, given that completing a master's program formally constitutes a "graduation" of sorts, and that I did not write a graduation thesis when completing my bachelor's degree.
 
 Part of the content of this article is based on a presentation given at a seminar. I would like to thank Messrs. Asakawa, Enokizono, Ohashi, Kaneko, and Matsumoto for attending the seminar and providing their comments.
+
