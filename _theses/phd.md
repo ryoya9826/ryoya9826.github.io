@@ -8,4 +8,7 @@ doi: '10.20604/0002000570'
 excerpt: ""
 ---
 
-Noether 性を仮定しない可換環におけるホモロジー代数について。
+## Comment
+
+This thesis concerns homological algebra over commutative rings without Noetherian assumptions. In particular, it studies local cohomology through weakly proregular sequences and characterizes semi-hereditary rings in terms of the flatness of torsion-free modules.
+
