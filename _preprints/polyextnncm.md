@@ -4,6 +4,7 @@ excerpt: 'We show that the HMCM property (Cohen--Macaulay rings in the sense of 
 date: 2026-06-24
 venue: 'Preprints'
 arxiv: '2606.25384'
+submitted: true
 
 ---
 ## Comment
