@@ -23,4 +23,3 @@ I do **NOT** guarantee the accuracy of these notes.
 - [可換環論の基礎（未完）](/files/note/ring.pdf), (Basics on commutative ring theory, in Japanese) last modified: 2025/03/24 （誤植修正）
 - [ホモロジー代数いらずの Cohen–Macaulay 環の基礎](/files/note/CMwithoutHA.pdf), (Basics on Cohen-Macaulay rings without homology algebra, in Japanese) 
 last modified: 2021/05/14　ホモロジー代数を一切用いずにCM環が強鎖状(universally catenary)であることを証明することを１つの目標としたノートです．
-- スペクトラル空間の基礎 : under constructions.

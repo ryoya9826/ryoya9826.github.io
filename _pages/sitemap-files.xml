@@ -1,0 +1,16 @@
+---
+layout: null
+sitemap: false
+permalink: /sitemap-files.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for file in site.static_files %}
+{% if file.extname == ".pdf" %}
+  <url>
+    <loc>{{ site.url }}{{ file.path }}</loc>
+    <lastmod>{{ file.modified_time | date_to_xmlschema }}</lastmod>
+  </url>
+{% endif %}
+{% endfor %}
+</urlset>
