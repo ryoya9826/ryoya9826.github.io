@@ -7,6 +7,18 @@ html {
   min-height: 100%;
 }
 
+/* ページ内リンクのスムーズスクロール（旧 jquery.smooth-scroll の置き換え） */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* 旧プラグインの offset: -20 に相当する余白 */
+[id] {
+  scroll-margin-top: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
