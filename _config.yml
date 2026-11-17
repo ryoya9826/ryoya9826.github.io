@@ -61,7 +61,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "og-image.jpg" # Open Graph/Twitter default site image (1200x630, images/ 配下)
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
