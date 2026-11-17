@@ -34,8 +34,13 @@
 @import "archive";
 @import "sidebar";
 
+// Font Awesome 6.7.2（Free）。フォントは assets/fonts に置いている
+$fa-font-path: "../fonts";
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/regular";
 @import "vendor/font-awesome/brands";
+// v4 形式のクラス名（fa fa-clock-o など）を 6 系のアイコンに対応させる
+@import "vendor/font-awesome/v4-shims";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
