@@ -18,7 +18,8 @@ redirect_from:
 
 * Apr 2023 – Present : [Beyont Ltd.](https://beyont.jp/en/) (formerly SKILLUP NeXt, Ltd.; renamed in Jul 2026)
   * Dec 2025 – Present : Manager and Data Scientist
-    * Oct 2026 – Present : Manager, Solution Group 2 — AI adoption support and development for manufacturing machinery and energy clients
+    * Jul 2026 – Present : Manager, Solution Group 2 — AI adoption support and development for machinery and energy clients
+    * Dec 2025 – Jun 2026 : Manager, General-Purpose Training Group — development and delivery of standardized AI training programs
   * Apr 2023 – Nov 2025 : Data Scientist
     * Instructor for corporate AI and DX training programs
     * AI development consulting
