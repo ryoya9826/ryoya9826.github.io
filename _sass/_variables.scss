@@ -13,8 +13,11 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+// 欧文フォントの後ろに和文フォントを置く。ページの lang が en でも、日本語は日本語の字形で表示される
+$japanese-sans-serif        : "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, "Noto Sans JP";
+$japanese-serif             : "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP";
+$serif                      : Georgia, Times, $japanese-serif, serif;
+$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, $japanese-sans-serif, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */

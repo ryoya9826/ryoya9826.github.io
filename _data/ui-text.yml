@@ -41,6 +41,10 @@ en: &DEFAULT_EN
   loading_label              : "Loading..."
 en-US:
   <<: *DEFAULT_EN
+  # このサイトでは表示しない見出し（locale を ja-JP から変えたときに表示を変えないため）
+  share_on_label             :
+  follow_label               :
+  related_label              :
 en-CA:
   <<: *DEFAULT_EN
 en-GB:
