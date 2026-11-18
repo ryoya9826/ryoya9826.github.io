@@ -6,7 +6,8 @@ _site/
 
 # Bundler / npm
 .bundle/
-vendor/
+# Bundler の install 先（ルート直下だけ。_sass/vendor などは対象外）
+/vendor/
 node_modules/
 
 # Python

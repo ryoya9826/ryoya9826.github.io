@@ -1,35 +1,40 @@
+@use "sass:color";
+@use "grid";
+@use "mixins";
+@use "variables";
+
 /* ==========================================================================
    SINGLE PAGE/POST
    ========================================================================== */
 
 #main {
-  @include container;
-  @include clearfix;
+  @include grid.grid-container;
+  @include mixins.clearfix;
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
+  @include grid.breakpoint(variables.$x-large) {
+    max-width: variables.$x-large;
   }
 }
 
 .page {
-  @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+  @include grid.breakpoint(variables.$large) {
+    @include grid.grid-span(10, 12, $last: true);
+    @include grid.grid-prefix(0.5, 12);
+    @include grid.grid-suffix(2, 12);
   }
 
   .page__inner-wrap {
-    @include full();
+    @include grid.grid-full;
 
     .page__content,
     .page__meta,
     .page__share {
-      @include full();
+      @include grid.grid-full;
     }
   }
 }
@@ -44,15 +49,15 @@
 }
 
 .page__lead {
-  font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-family: variables.$global-font-family;
+  font-size: variables.$type-size-4;
 }
 
 .page__content {
 
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid variables.$border-color;
   }
 
   p, li, dl {
@@ -61,13 +66,13 @@
 
   /* paragraph indents */
   p {
-    margin: 0 0 $indent-var;
+    margin: 0 0 variables.$indent-var;
 
     /* sibling indentation*/
-    @if $paragraph-indent == true {
+    @if variables.$paragraph-indent == true {
       & + p {
-        text-indent: $indent-var;
-        margin-top: -($indent-var);
+        text-indent: variables.$indent-var;
+        margin-top: -(variables.$indent-var);
       }
     }
   }
@@ -86,18 +91,18 @@
 
   dt {
     margin-top: 1em;
-    font-family: $sans-serif;
+    font-family: variables.$sans-serif;
     font-weight: bold;
   }
 
   dd {
     margin-left: 1em;
-    font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-family: variables.$sans-serif;
+    font-size: variables.$type-size-6;
   }
 
   .small {
-    font-size: $type-size-6;
+    font-size: variables.$type-size-6;
   }
 
   /* blockquote citations */
@@ -110,7 +115,7 @@
 .page__hero {
   position: relative;
   margin-bottom: 2em;
-  @include clearfix;
+  @include mixins.clearfix;
   animation: intro 0.3s both;
   animation-delay: 0.25s;
 
@@ -118,7 +123,7 @@
     position: relative;
     margin-bottom: 2em;
     padding: 3em 0;
-    @include clearfix;
+    @include mixins.clearfix;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -133,8 +138,8 @@
       padding-left: 1em;
       padding-right: 1em;
 
-      @include breakpoint($x-large) {
-        max-width: $x-large;
+      @include grid.breakpoint(variables.$x-large) {
+        max-width: variables.$x-large;
       }
     }
 
@@ -147,14 +152,14 @@
     }
 
     .page__lead {
-      max-width: $medium;
+      max-width: variables.$medium;
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: variables.$type-size-2;
 
-      @include breakpoint($small) {
-        font-size: $type-size-1;
+      @include grid.breakpoint(variables.$small) {
+        font-size: variables.$type-size-1;
       }
     }
   }
@@ -173,15 +178,15 @@
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: $caption-font-family;
-  font-size: $type-size-7;
+  font-family: variables.$caption-font-family;
+  font-size: variables.$type-size-7;
   background: #000;
   text-align: right;
   z-index: 5;
   opacity: 0.5;
-  border-radius: $border-radius 0 $border-radius 0;
+  border-radius: variables.$border-radius 0 variables.$border-radius 0;
 
-  @include breakpoint($large) {
+  @include grid.breakpoint(variables.$large) {
     padding: 5px 10px;
   }
 
@@ -198,9 +203,9 @@
 .page__share {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid variables.$border-color;
 
-  @include breakpoint(max-width $small) {
+  @include grid.breakpoint(max-width variables.$small) {
     .btn span {
       border: 0;
       clip: rect(0 0 0 0);
@@ -216,7 +221,7 @@
 
 .page__share-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: variables.$type-size-6;
   text-transform: uppercase;
 }
 
@@ -227,9 +232,9 @@
 
 .page__meta {
   margin-top: 2em;
-  color: mix(#fff, $gray, 25%);
-  font-family: $sans-serif;
-  font-size: $type-size-6;
+  color: color.mix(#fff, variables.$gray, 25%);
+  font-family: variables.$sans-serif;
+  font-size: variables.$type-size-6;
 
   p {
     margin: 0;
@@ -242,7 +247,7 @@
 
 .page__meta-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: variables.$type-size-6;
   text-transform: uppercase;
 }
 
@@ -267,12 +272,12 @@
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid $light-gray;
-  border-radius: $border-radius;
+  border: 1px solid variables.$light-gray;
+  border-radius: variables.$border-radius;
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: variables.$link-color-hover;
   }
 }
 
@@ -282,22 +287,22 @@
    ========================================================================== */
 
 .page__comments {
-  @include full();
+  @include grid.grid-full;
 }
 
 .page__comments-title {
   margin-top: 2rem;
   margin-bottom: 10px;
   padding-top: 2rem;
-  font-size: $type-size-6;
-  border-top: 1px solid $border-color;
+  font-size: variables.$type-size-6;
+  border-top: 1px solid variables.$border-color;
   text-transform: uppercase;
 }
 
 .page__comments-form {
   padding: 1em;
-  background: $lighter-gray;
-  transition: $global-transition;
+  background: variables.$lighter-gray;
+  transition: variables.$global-transition;
 
   &.disabled {
     input,
@@ -314,11 +319,11 @@
 }
 
 .comment {
-  @include clearfix();
+  @include mixins.clearfix();
   margin: 1em 0;
 
   &:not(:last-child) {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid variables.$border-color;
   }
 }
 
@@ -327,7 +332,7 @@
   width: 60px;
   height: 60px;
 
-  @include breakpoint($large) {
+  @include grid.breakpoint(variables.$large) {
     width: 100px;
     height: 100px;
   }
@@ -338,11 +343,11 @@
   height: 40px;
   border-radius: 50%;
 
-  @include breakpoint($large) {
+  @include grid.breakpoint(variables.$large) {
     width: 80px;
     height: 80px;
     padding: 5px;
-    border: 1px solid $border-color;
+    border: 1px solid variables.$border-color;
   }
 }
 
@@ -350,7 +355,7 @@
   float: right;
   width: calc(100% - 60px);
 
-  @include breakpoint($large) {
+  @include grid.breakpoint(variables.$large) {
     width: calc(100% - 100px);
   }
 }
@@ -364,7 +369,7 @@
 }
 
 .comment__date {
-  @extend .page__meta;
+  // @extend .page__meta は _extends.scss に移した
   margin: 0;
 
   a {
@@ -380,12 +385,12 @@
 .page__related {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
-  @include clearfix();
+  border-top: 1px solid variables.$border-color;
+  @include mixins.clearfix();
   float: left;
 
-  @include breakpoint($large) {
-    @include pre(2.5 of 12);
+  @include grid.breakpoint(variables.$large) {
+    @include grid.grid-pre(2.5, 12);
   }
 
   a {
@@ -396,6 +401,6 @@
 
 .page__related-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: variables.$type-size-6;
   text-transform: uppercase;
 }

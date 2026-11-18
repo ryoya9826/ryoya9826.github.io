@@ -1,6 +1,7 @@
 ---
 ---
 
+
 /*
  *    Minimal Mistakes Jekyll Theme
  *
@@ -10,37 +11,36 @@
  *
 */
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
-@import "variables";
-@import "mixins";
-@import "vendor/susy/susy";
+@use "variables";
+@use "mixins";
+@use "grid"; // グリッドとメディアクエリ（旧 Susy / Breakpoint の置き換え）
 
-@import "reset";
-@import "base";
+@use "reset";
+@use "base";
 
-@import "utilities";
-@import "animations";
-@import "tables";
-@import "buttons";
-@import "notices";
-@import "masthead";
-@import "navigation";
-@import "footer";
-@import "syntax";
+@use "utilities";
+@use "animations";
+@use "tables";
+@use "buttons";
+@use "notices";
+@use "masthead";
+@use "navigation";
+@use "footer";
+@use "syntax";
 
-@import "forms";
+@use "forms";
 
-@import "page";
-@import "archive";
-@import "sidebar";
+@use "page";
+@use "archive";
+@use "sidebar";
 
-// Font Awesome 6.7.2（Free）。フォントは assets/fonts に置いている
-$fa-font-path: "../fonts";
-@import "vendor/font-awesome/fontawesome";
-@import "vendor/font-awesome/solid";
-@import "vendor/font-awesome/regular";
-@import "vendor/font-awesome/brands";
+// Font Awesome 6.7.2（Free）の配布版 CSS をそのまま取り込む。フォントは assets/webfonts に置いている
+@use "vendor/font-awesome/fontawesome";
+@use "vendor/font-awesome/solid";
+@use "vendor/font-awesome/regular";
+@use "vendor/font-awesome/brands";
 // v4 形式のクラス名（fa fa-clock-o など）を 6 系のアイコンに対応させる
-@import "vendor/font-awesome/v4-shims";
-@import "vendor/magnific-popup/magnific-popup";
-@import "print";
+@use "vendor/font-awesome/v4-shims";
+@use "vendor/magnific-popup/magnific-popup";
+@use "print";
+@use "extends"; // @extend をサイト全体に効かせるため最後に読み込む

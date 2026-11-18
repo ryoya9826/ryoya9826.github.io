@@ -1,0 +1,155 @@
+@use "variables";
+
+/* ==========================================================================
+   GRID / BREAKPOINTS
+   旧 vendor ライブラリ（Susy 2、Breakpoint）のうち、このサイトで使っていた機能だけを
+   置き換えたもの。出力される CSS は旧ライブラリと同じになるようにしている。
+   - グリッド: 12 列、列間（gutter）は列幅の 1/4、可変幅（%）、float で配置
+   - メディアクエリ: px を 16px = 1em で em に換算して出力（旧 "to ems": true と同じ）
+   ========================================================================== */
+
+@use "sass:list";
+@use "sass:math";
+@use "sass:meta";
+
+$grid-columns: 12;
+$grid-gutter: 0.25; // 列幅に対する列間の比率
+
+/*
+   Breakpoints
+   ========================================================================== */
+
+// px の値を em に換算する（16px = 1em）
+@function breakpoint-em($value) {
+  @return math.div($value, 16px) * 1em;
+}
+
+// @include breakpoint($large)            -> @media (min-width: …em)
+// @include breakpoint(max-width $small)  -> @media (max-width: …em)
+@mixin breakpoint($query) {
+  @if meta.type-of($query) == "list" {
+    @media (#{list.nth($query, 1)}: #{breakpoint-em(list.nth($query, 2))}) {
+      @content;
+    }
+  } @else {
+    @media (min-width: #{breakpoint-em($query)}) {
+      @content;
+    }
+  }
+}
+
+/*
+   Grid
+   ========================================================================== */
+
+// $of 列ぶんの全幅（列間を含む）を列幅の単位で表したもの
+@function grid-context($of: $grid-columns) {
+  @return $of + ($of - 1) * $grid-gutter;
+}
+
+// $n 列ぶんの幅（間の列間を含む）の割合
+@function grid-span-width($n, $of: $grid-columns) {
+  @return math.percentage(math.div($n + ($n - 1) * $grid-gutter, grid-context($of)));
+}
+
+// $n 列と、その右の列間 1 つぶんの幅の割合（prefix / suffix / pre に使う）
+@function grid-span-wide($n, $of: $grid-columns) {
+  @return math.percentage(math.div($n + $n * $grid-gutter, grid-context($of)));
+}
+
+// 列間 1 つぶんの幅の割合
+@function grid-gutter-width($of: $grid-columns) {
+  @return math.percentage(math.div($grid-gutter, grid-context($of)));
+}
+
+// 旧 Susy の span()。$last で行の最後の要素にする。$rtl で左右を反転する
+@mixin grid-span($n, $of: $grid-columns, $last: false, $rtl: false) {
+  @if $n == $of {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  } @else {
+    // 通常は左から並べ、右側に列間を取る。$rtl のときは左右を入れ替える
+    $flow: left;
+    $opposite: right;
+    @if $rtl {
+      $flow: right;
+      $opposite: left;
+    }
+    width: grid-span-width($n, $of);
+    @if $last {
+      float: $opposite;
+      margin-#{$opposite}: 0;
+    } @else {
+      float: $flow;
+      margin-#{$opposite}: grid-gutter-width($of);
+    }
+  }
+}
+
+// 旧 Susy の prefix() / suffix() / pre()
+@mixin grid-prefix($n, $of: $grid-columns) {
+  padding-left: grid-span-wide($n, $of);
+}
+
+@mixin grid-suffix($n, $of: $grid-columns) {
+  padding-right: grid-span-wide($n, $of);
+}
+
+@mixin grid-pre($n, $of: $grid-columns) {
+  margin-left: grid-span-wide($n, $of);
+}
+
+// 旧 Susy の full()
+@mixin grid-full {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// 旧 Susy の container()。最大幅を $large にして中央寄せし、float を解除する
+@mixin grid-container($max-width: variables.$large) {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+// 旧 Susy の gallery()。$of 列の中に $n 列幅の要素を並べ、行ごとに折り返す
+@mixin grid-gallery($n, $of: $grid-columns) {
+  $per-row: math.div($of, $n);
+  width: grid-span-width($n, $of);
+  float: left;
+
+  @for $i from 1 through $per-row {
+    &:nth-child(#{$per-row}n+#{$i}) {
+      @if $i == 1 {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0;
+      } @else {
+        margin-left: ($i - 1) * grid-span-wide($n, $of);
+        margin-right: -100%;
+        clear: none;
+      }
+    }
+  }
+}
+
+// 旧 Susy の border-box-sizing()
+@mixin border-box-sizing {
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}

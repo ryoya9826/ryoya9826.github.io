@@ -1,3 +1,4 @@
+@use "sass:color";
 /* ==========================================================================
    Variables
    ========================================================================== */
@@ -51,10 +52,10 @@ $type-size-8                : 0.625em;  // ~10px
    ========================================================================== */
 
 $gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+$dark-gray                  : color.mix(#000, $gray, 40%);
+$darker-gray                : color.mix(#000, $gray, 60%);
+$light-gray                 : color.mix(#fff, $gray, 50%);
+$lighter-gray               : color.mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
 $background-color           : #fff;
@@ -94,17 +95,16 @@ $xing-color                 : #006567;
 
 /* links */
 $link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
+$link-color-hover           : color.mix(#000, $link-color, 25%);
+$link-color-visited         : color.mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$masthead-link-color-hover  : color.mix(#000, $primary-color, 25%);
 
 
 /*
    Breakpoints
    ========================================================================== */
 
-@include breakpoint-set("to ems", true);
 /*
 $small                      : 400px;
 $medium                     : 500px;
@@ -127,22 +127,6 @@ $right-sidebar-width-narrow : 0px;
 $right-sidebar-width        : 0px;
 $right-sidebar-width-wide   : 0px;
 
-$susy: (
-  columns: 12,
-  column-width: 120px,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: after,
-  container: $large,
-  global-box-sizing: border-box,
-  // debug: (
-  //   image: show,
-  //   color: blue,
-  //   output: overlay,
-  //   toggle: top right,
-  // ),
-);
 
 
 /*
