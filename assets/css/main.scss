@@ -12,6 +12,7 @@
 */
 
 @use "variables";
+@use "theme"; // ライト / ダークの色（CSS 変数）
 @use "mixins";
 @use "grid"; // グリッドとメディアクエリ（旧 Susy / Breakpoint の置き換え）
 

@@ -20,13 +20,13 @@
   height: auto;
   /* sticky footer fix end */
   margin-top: 3em;
-  color: color.mix(#fff, variables.$gray, 25%);
+  color: var(--color-muted);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background-color: variables.$lighter-gray;
-  border-top: 1px solid variables.$light-gray;
+  background-color: var(--color-lighter-gray);
+  border-top: 1px solid var(--color-light-gray);
 
   footer {
     @include mixins.clearfix;
@@ -54,7 +54,7 @@
   .fab,
   .far,
   .fal {
-    color: color.mix(#fff, variables.$gray, 25%);
+    color: var(--color-muted);
   }
 }
 

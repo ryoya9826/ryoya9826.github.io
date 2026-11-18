@@ -1,0 +1,109 @@
+/* ==========================================================================
+   THEME（ライト / ダーク）
+   明暗で変わる色を CSS 変数にまとめる。
+   - ライトの値は、これまで各パーシャルで使っていた Sass の式と同じにしている（表示は変わらない）
+   - OS の配色設定がダーク（prefers-color-scheme: dark）のときだけ、ダークの値に切り替える
+   - 色付きボタンや画像の上の白い文字、状態を表す色（成功・警告・危険）、SNS のブランド色は
+     どちらのテーマでも同じなので、ここには含めない
+   ========================================================================== */
+
+@use "sass:color";
+@use "variables";
+
+// ダークテーマの基本色（Sass の計算にも使う）
+$dark-background: #1c1f22;
+$dark-surface: #25292d;
+$dark-text: #d3d6d9;
+
+:root {
+  color-scheme: light dark;
+
+  /* 背景・面 */
+  --color-background: #{variables.$background-color};
+  --color-body: #{variables.$body-color};
+  --color-surface: #fff; /* ドロップダウン・目次・プルダウンなど、本文の上に重なる面 */
+  --color-overlay-70: rgba(255, 255, 255, 0.7);
+  --color-overlay-85: rgba(255, 255, 255, 0.85);
+  --color-shadow: #{rgba(#000, 0.25)};
+
+  /* 文字 */
+  --color-text: #{variables.$text-color};
+  --color-text-strong: #000;
+  --color-muted: #{color.mix(#fff, variables.$gray, 25%)};
+  --color-muted-50: #{color.mix(#fff, variables.$gray, 50%)};
+  --color-disabled: #{color.mix(#fff, variables.$gray, 75%)};
+  --color-caption: #{color.mix(#fff, variables.$text-color, 25%)};
+
+  /* 灰色・罫線 */
+  --color-gray: #{variables.$gray};
+  --color-light-gray: #{variables.$light-gray};
+  --color-lighter-gray: #{variables.$lighter-gray};
+  --color-border: #{variables.$border-color};
+  --color-border-form: #{color.mix(#fff, #000, 80%)};
+  --color-border-form-strong: #{color.adjust(#000, $lightness: 50%)};
+
+  /* 基調色 */
+  --color-primary: #{variables.$primary-color};
+  --color-primary-50: #{color.mix(#fff, variables.$primary-color, 50%)};
+  --color-primary-75: #{color.mix(#fff, variables.$primary-color, 75%)};
+
+  /* リンク */
+  --color-link: #{variables.$link-color};
+  --color-link-hover: #{variables.$link-color-hover};
+  --color-link-visited: #{variables.$link-color-visited};
+  --color-masthead-link: #{variables.$masthead-link-color};
+  --color-masthead-link-hover: #{variables.$masthead-link-color-hover};
+
+  /* コード */
+  --color-code-background: #{variables.$code-background-color};
+  --color-code-background-dark: #{variables.$code-background-color-dark};
+  --color-syntax-text: #586e75;    /* Solarized base01 */
+  --color-syntax-comment: #93a1a1; /* Solarized base1 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #{$dark-background};
+    --color-body: #{$dark-background};
+    --color-surface: #{$dark-surface};
+    --color-overlay-70: #{rgba($dark-background, 0.7)};
+    --color-overlay-85: #{rgba($dark-background, 0.85)};
+    --color-shadow: rgba(0, 0, 0, 0.6);
+
+    --color-text: #{$dark-text};
+    --color-text-strong: #fff;
+    --color-muted: #a3aab0;
+    --color-muted-50: #8c949a;
+    --color-disabled: #5d646a;
+    --color-caption: #adb3b8;
+
+    --color-gray: #949ca2;
+    --color-light-gray: #4a5056;
+    --color-lighter-gray: #2c3034;
+    --color-border: #363b40;
+    --color-border-form: #4a5056;
+    --color-border-form-strong: #6b7278;
+
+    --color-primary: #a3aab0;
+    --color-primary-50: #5d646a;
+    --color-primary-75: #363b40;
+
+    --color-link: #6cc3dd;
+    --color-link-hover: #a3dbec;
+    --color-link-visited: #9cc4d3;
+    --color-masthead-link: #b6bcc1;
+    --color-masthead-link-hover: #eceef0;
+
+    --color-code-background: #23272b;
+    --color-code-background-dark: #3a3f44;
+    --color-syntax-text: #93a1a1;    /* Solarized dark の本文 */
+    --color-syntax-comment: #6f8389; /* Solarized dark のコメント */
+  }
+}
+
+// ダークテーマのときだけ追加するスタイル（CSS 変数にできない、Sass で計算する色など）
+@mixin dark {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
