@@ -1,0 +1,61 @@
+# Jekyll 4 でサイトをビルドし、GitHub Pages にデプロイする。
+# - master への push / 手動実行: ビルドしてデプロイする
+# - master 向けの PR: ビルドだけ行う（旧 build-check.yml の役割）
+# 前提: リポジトリの Settings → Pages → Build and deployment の Source が「GitHub Actions」になっていること。
+name: Build and deploy
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.event_name }}-${{ github.ref }}
+  # 本番デプロイは途中で止めない。PR のビルドは新しい push が来たら古いものを止める
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Configure GitHub Pages
+        id: pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v6
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl "${BASE_PATH}"
+        env:
+          JEKYLL_ENV: production
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+
+      - name: Upload artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
