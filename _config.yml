@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Ryoya Ando, Ph.D."
-  avatar           : "profile.jpg"
+  avatar           : "profile-avatar.jpg" # 表示用に幅 500px へ縮小したもの（元画像は profile.jpg）
   bio              : "Manager and Data Scientist at SKILLUP NeXt, Ltd."
   location         : "Chiba, Japan"
   employer         :
