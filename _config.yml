@@ -65,9 +65,14 @@ og_image                 : "og-image.jpg" # Open Graph/Twitter default site imag
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person # Person or Organization (defaults to Person)
+  name                   : "Ryoya Ando" # If the user or organization name differs from the site's name
+  job_title              : "Manager and Data Scientist"
+  works_for              : "SKILLUP NeXt, Ltd."
+  alumni_of              : "Tokyo University of Science"
+  links: # An array of links to social media profiles（構造化データの sameAs になる）
+    - "https://orcid.org/0000-0002-6033-6628"
+    - "https://github.com/ryoya9826"
 
 
 # Analytics
@@ -104,6 +109,7 @@ author:
   lastfm           :
   linkedin         :
   orcid            : https://orcid.org/0000-0002-6033-6628
+  scholar_name     : "Ando, Ryoya" # Google Scholar 用のメタタグ（citation_author）に使う「姓, 名」
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

@@ -6,6 +6,11 @@ venue: 'Moroc. J. Algebra Geom. Appl., Vol. 1, no. 1, pp. 98--107'
 paperurl: 'https://ced.fst-usmba.ac.ma/p/mjaga/a-note-on-weakly-proregular-sequence/'
 citation: 'R. Ando, A note on weakly proregular sequences, Moroc. J. Algebra Geom. Appl., Vol. 1, no. 1, pp. 98--107 (2022)'
 
+journal: "Moroccan Journal of Algebra and Geometry with Applications"
+volume: 1
+issue: 1
+firstpage: 98
+lastpage: 107
 ---
 
 ## Comment

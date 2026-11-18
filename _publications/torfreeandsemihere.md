@@ -6,6 +6,12 @@ venue: 'Tokyo J. Math., Vol. 49, no. 1, pp. 177--187'
 paperurl: 'https://projecteuclid.org/journals/tokyo-journal-of-mathematics/volume-49/issue-1/On-Torsion-free-Modules-and-Semi-hereditary-Rings/10.3836/tjm/1502179443.short'
 citation: 'R. Ando, On torsion-free modules and semi-hereditary rings, Tokyo J. Math., Vol. 49, no. 1, pp. 177--187 (2026)'
 
+journal: "Tokyo Journal of Mathematics"
+volume: 49
+issue: 1
+firstpage: 177
+lastpage: 187
+doi: "10.3836/tjm/1502179443"
 ---
 
 ## Comment
