@@ -10,7 +10,7 @@ locale                   : "en-US" # 本文の主な言語。日本語だけの�
 title                    : "Ryoya Ando"
 title_separator          : "-"
 name                     : &name "Ryoya Ando, Ph.D."
-description              : &description "Manager and Data Scientist, SKILLUP NeXt, Ltd. / Ph.D. (Doctor of Science) from Department of Mathematics, Faculty of Science and Technology, Tokyo University of Science"
+description              : &description "Manager and Data Scientist, Beyont Ltd. / Ph.D. (Doctor of Science) from Department of Mathematics, Faculty of Science and Technology, Tokyo University of Science"
 url                      : https://ryoya9826.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ryoya9826/ryoya9826.github.io"
@@ -68,7 +68,7 @@ social:
   type                   : Person # Person or Organization (defaults to Person)
   name                   : "Ryoya Ando" # If the user or organization name differs from the site's name
   job_title              : "Manager and Data Scientist"
-  works_for              : "SKILLUP NeXt, Ltd."
+  works_for              : "Beyont Ltd."
   alumni_of              : "Tokyo University of Science"
   links: # An array of links to social media profiles（構造化データの sameAs になる）
     - "https://orcid.org/0000-0002-6033-6628"
@@ -87,7 +87,7 @@ analytics:
 author:
   name             : "Ryoya Ando, Ph.D."
   avatar           : "profile-avatar.jpg" # 表示用に幅 500px へ縮小したもの（元画像は profile.jpg）
-  bio              : "Manager and Data Scientist at SKILLUP NeXt, Ltd."
+  bio              : "Manager and Data Scientist at Beyont Ltd."
   location         : "Chiba, Japan"
   employer         :
   pubmed           :
