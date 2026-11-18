@@ -1,7 +1,8 @@
 /* ==========================================================================
    THEME（ライト / ダーク）
    明暗で変わる色を CSS 変数にまとめる。
-   - ライトの値は、これまで各パーシャルで使っていた Sass の式と同じにしている（表示は変わらない）
+   - ライトの値は、これまで各パーシャルで使っていた Sass の式を基本に、文字のコントラストが
+     WCAG AA（通常の文字 4.5:1）を満たすよう一部を濃くしている（#28）
    - OS の配色設定がダーク（prefers-color-scheme: dark）のときだけ、ダークの値に切り替える
    - 色付きボタンや画像の上の白い文字、状態を表す色（成功・警告・危険）、SNS のブランド色は
      どちらのテーマでも同じなので、ここには含めない
@@ -29,13 +30,13 @@ $dark-text: #d3d6d9;
   /* 文字 */
   --color-text: #{variables.$text-color};
   --color-text-strong: #000;
-  --color-muted: #{color.mix(#fff, variables.$gray, 25%)};
-  --color-muted-50: #{color.mix(#fff, variables.$gray, 50%)};
+  --color-muted: #{variables.$text-muted-color};
+  --color-muted-50: #{variables.$text-muted-color}; /* ページ送りなど。旧 mix(#fff, $gray, 50%) は白地で 1.8:1 だった */
   --color-disabled: #{color.mix(#fff, variables.$gray, 75%)};
   --color-caption: #{color.mix(#fff, variables.$text-color, 25%)};
 
   /* 灰色・罫線 */
-  --color-gray: #{variables.$gray};
+  --color-gray: #{variables.$text-muted-color}; /* 文字色にも使うので、薄い文字と同じ濃さにする */
   --color-light-gray: #{variables.$light-gray};
   --color-lighter-gray: #{variables.$lighter-gray};
   --color-border: #{variables.$border-color};
