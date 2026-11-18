@@ -4,7 +4,6 @@ title: "Software & Tools"
 permalink: /software/
 redirect_from:
   - /latex/
-last_modified_at: 2026-11-18
 ---
 
 {% include base_path %}

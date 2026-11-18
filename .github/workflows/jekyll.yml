@@ -24,6 +24,18 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
+        with:
+          # jekyll-last-modified-at が git の履歴から更新日を取るため、履歴をすべて取得する
+          fetch-depth: 0
+
+      # checkout 直後はファイルの更新日時がすべて「今」になる。
+      # サイトマップに載る PDF などの静的ファイルの lastmod が毎回変わらないよう、最後のコミット日時に戻す
+      - name: Restore file modification times
+        shell: bash
+        run: |
+          git ls-files -z -- files | while IFS= read -r -d '' f; do
+            touch -d "$(git log -1 --format=%cI -- "$f")" "$f"
+          done
 
       - uses: ruby/setup-ruby@v1
         with:

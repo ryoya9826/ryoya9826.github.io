@@ -200,6 +200,11 @@ collections:
 
 # Defaults
 defaults:
+  # Search Console の所有権確認ファイルはサイトマップに載せない
+  - scope:
+      path: "google6495c2f4ce4e797b.html"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""
@@ -302,6 +307,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-last-modified-at # git の履歴から各ページの更新日を出す（sitemap の lastmod に使われる）
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate

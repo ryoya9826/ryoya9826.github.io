@@ -2,7 +2,6 @@
 layout: archive
 title: "Notes"
 permalink: /notes/
-last_modified_at: 2026-04-21
 ---
 
 {% include base_path %}
