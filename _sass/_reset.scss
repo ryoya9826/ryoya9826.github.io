@@ -1,16 +1,20 @@
+@use "grid";
+@use "variables";
+@use "mixins"; // @extend %tab-focus のため
+
 /* ==========================================================================
    STYLE RESETS
    ========================================================================== */
 
-@include border-box-sizing;
+@include grid.border-box-sizing;
 
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
-  background-color: $background-color;
+  background-color: variables.$background-color;
   font-size: 16px;
 
-  @include breakpoint($medium) {
+  @include grid.breakpoint(variables.$medium) {
     font-size: 18px;
   }
 
@@ -67,7 +71,7 @@ audio:not([controls]) {
 }
 
 a {
-  color: $link-color;
+  color: variables.$link-color;
 }
 
 /* Apply focus state */
