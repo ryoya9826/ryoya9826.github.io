@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Software & Tools"
+description: "Software by Ryoya Ando: LaTeX packages on CTAN (ltMermaid, ua-jecon), other LaTeX macros, and browser extensions."
 permalink: /software/
 redirect_from:
   - /latex/

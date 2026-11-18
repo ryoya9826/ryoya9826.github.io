@@ -1,0 +1,46 @@
+{% comment %}
+  Google Scholar 用の書誌メタタグ（Highwire Press 形式）。
+  論文（publications）、プレプリント（preprints）、博士論文（theses）のページにだけ出す。
+  参考: https://scholar.google.com/intl/ja/scholar/inclusion.html#indexing
+
+  front matter で使う項目
+  - 共通: title, date, authors（省略時は _config.yml の author.scholar_name）
+  - 論文: journal, volume, issue, firstpage, lastpage, doi
+  - プレプリント: arxiv（arXiv の番号）
+  - 博士論文: venue（授与機関）, doi
+  - 任意: pdfurl（本文 PDF の URL）
+{% endcomment %}
+{% assign scholar_collections = "publications,preprints,theses" | split: "," %}
+{% if scholar_collections contains page.collection %}
+  {% assign scholar_page_url = page.url | prepend: seo_url | replace: "/index.html", "/" %}
+  {% comment %} 題名の -- は LaTeX 流の en dash なので、記号に置き換える {% endcomment %}
+  <meta name="citation_title" content="{{ page.title | replace: '--', '–' | escape }}">
+  {% if page.authors %}
+    {% for scholar_author in page.authors %}
+  <meta name="citation_author" content="{{ scholar_author | escape }}">
+    {% endfor %}
+  {% elsif site.author.scholar_name %}
+  <meta name="citation_author" content="{{ site.author.scholar_name | escape }}">
+  {% endif %}
+  {% if page.date %}
+  <meta name="citation_publication_date" content="{{ page.date | date: '%Y/%m/%d' }}">
+  {% endif %}
+
+  {% if page.collection == "publications" %}
+    {% if page.journal %}<meta name="citation_journal_title" content="{{ page.journal | escape }}">{% endif %}
+    {% if page.volume %}<meta name="citation_volume" content="{{ page.volume }}">{% endif %}
+    {% if page.issue %}<meta name="citation_issue" content="{{ page.issue }}">{% endif %}
+    {% if page.firstpage %}<meta name="citation_firstpage" content="{{ page.firstpage }}">{% endif %}
+    {% if page.lastpage %}<meta name="citation_lastpage" content="{{ page.lastpage }}">{% endif %}
+  {% elsif page.collection == "preprints" and page.arxiv %}
+  <meta name="citation_technical_report_institution" content="arXiv">
+  <meta name="citation_technical_report_number" content="arXiv:{{ page.arxiv }}">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/{{ page.arxiv }}">
+  {% elsif page.collection == "theses" and page.venue %}
+  <meta name="citation_dissertation_institution" content="{{ page.venue | escape }}">
+  {% endif %}
+
+  {% if page.doi %}<meta name="citation_doi" content="{{ page.doi }}">{% endif %}
+  {% if page.pdfurl %}<meta name="citation_pdf_url" content="{{ page.pdfurl }}">{% endif %}
+  <meta name="citation_abstract_html_url" content="{{ scholar_page_url }}">
+{% endif %}

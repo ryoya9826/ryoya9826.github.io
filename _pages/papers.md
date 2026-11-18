@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Publications"
+description: "Publications of Ryoya Ando: refereed papers, preprints, Ph.D. thesis, proceedings and books, mainly on homological algebra over non-Noetherian commutative rings."
 permalink: /papers/
 ---
 

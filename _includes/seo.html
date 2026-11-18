@@ -7,7 +7,19 @@
 {% assign seo_url = seo_url | default: site.github.url %}
 
 {% if page.title %}
-  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+  {% comment %}
+    同じ題名のページ（同じ演題での複数回の講演、論文と講究録など）を区別するため、
+    講演には「Talk, 日付」、Miscellaneous には年を題名の後ろに付ける
+  {% endcomment %}
+  {% assign seo_page_title = page.title %}
+  {% if page.collection == "talks" and page.date %}
+    {% assign seo_title_date = page.date | date: "%Y-%m-%d" %}
+    {% assign seo_page_title = seo_page_title | append: " (Talk, " | append: seo_title_date | append: ")" %}
+  {% elsif page.collection == "miscellaneous" and page.date %}
+    {% assign seo_title_date = page.date | date: "%Y" %}
+    {% assign seo_page_title = seo_page_title | append: " (" | append: seo_title_date | append: ")" %}
+  {% endif %}
+  {% assign seo_title = seo_page_title | append: " " | append: site.title_separator | append: " " | append: site.title %}
 {% endif %}
 
 {% if seo_title %}
@@ -20,9 +32,41 @@
 
 <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 
-{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
+{% comment %}
+  説明文の優先順位: front matter の description > 抜粋（excerpt） > 本文 > サイト全体の説明文。
+  抜粋や本文が「## Abstract」のような見出しで始まる場合は、見出しを飛ばして最初の段落から作る
+  （これまでは説明文が「Abstract」だけになっていた）。
+{% endcomment %}
+{% assign seo_description = page.description %}
+{% unless seo_description %}
+  {% assign seo_excerpt = page.excerpt | strip %}
+  {% assign seo_excerpt_head = seo_excerpt | slice: 0, 2 %}
+  {% if seo_excerpt != "" and seo_excerpt_head != "<h" %}
+    {% assign seo_description = seo_excerpt %}
+  {% else %}
+    {% assign seo_body = page.content | strip %}
+    {% assign seo_body_head = seo_body | slice: 0, 2 %}
+    {% if seo_body_head == "<h" %}
+      {% assign seo_body_parts = seo_body | split: "</h2>" %}
+      {% if seo_body_parts.size > 1 %}
+        {% assign seo_body_parts = seo_body_parts | shift %}
+        {% assign seo_body = seo_body_parts | join: " " %}
+      {% endif %}
+    {% endif %}
+    {% assign seo_body = seo_body | replace: "</p>", " " | replace: "</li>", " " | strip_html | normalize_whitespace %}
+    {% if seo_body != "" %}
+      {% assign seo_description = seo_body | truncate: 160 %}
+    {% endif %}
+  {% endif %}
+  {% comment %} 要旨のない講演ページは、種類・会場・場所・日付から説明文を組み立てる {% endcomment %}
+  {% assign seo_description_size = seo_description | size %}
+  {% if page.collection == "talks" and seo_description_size < 50 %}
+    {% capture seo_description %}{{ page.type | default: "Talk" }} by {{ site.social.name | default: site.name }}: "{{ page.title }}"{% if page.venue %}, {{ page.venue }}{% endif %}{% if page.location %}, {{ page.location }}{% endif %}{% if page.date %} ({{ page.date | date: "%Y-%m-%d" }}){% endif %}.{% endcapture %}
+  {% endif %}
+{% endunless %}
+{% assign seo_description = seo_description | default: site.description %}
 {% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+  {% assign seo_description = seo_description | markdownify | strip_html | normalize_whitespace | escape_once %}
 {% endif %}
 
 {% if seo_description %}
@@ -132,16 +176,33 @@
 {% endif %}
 
 {% if site.social %}
+  {% comment %} サイトの持ち主の情報。_config.yml の social に書いた項目だけを出す {% endcomment %}
   <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
+      "@context" : "https://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
       "name" : {{ site.social.name | default: site.name | jsonify }},
-      "url" : {{ seo_url | jsonify }},
+      "url" : {{ seo_url | jsonify }}
+      {%- if site.author.avatar -%},
+      "image" : {{ site.author.avatar | prepend: "/images/" | prepend: base_path | jsonify }}
+      {%- endif -%}
+      {%- if site.social.job_title -%},
+      "jobTitle" : {{ site.social.job_title | jsonify }}
+      {%- endif -%}
+      {%- if site.social.works_for -%},
+      "worksFor" : { "@type" : "Organization", "name" : {{ site.social.works_for | jsonify }} }
+      {%- endif -%}
+      {%- if site.social.alumni_of -%},
+      "alumniOf" : { "@type" : "CollegeOrUniversity", "name" : {{ site.social.alumni_of | jsonify }} }
+      {%- endif -%}
+      {%- if site.social.links -%},
       "sameAs" : {{ site.social.links | jsonify }}
+      {%- endif %}
     }
   </script>
 {% endif %}
+
+{% include scholar-meta.html %}
 
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />

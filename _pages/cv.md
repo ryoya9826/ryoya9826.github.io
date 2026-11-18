@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "CV"
+description: "Curriculum vitae of Ryoya Ando, Ph.D.: education, employment, and research and outreach activities."
 permalink: /cv/
 redirect_from:
   - /resume

@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Notes"
+description: "Mathematical notes by Ryoya Ando, including his master thesis and Mathlog articles (mostly in Japanese)."
 permalink: /notes/
 ---
 
