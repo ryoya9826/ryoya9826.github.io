@@ -1,3 +1,20 @@
+# Jekyll のビルド結果とキャッシュ
 _site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler / npm
+.bundle/
+vendor/
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
 .DS_Store
+
+# ローカルの作業メモ
 docs/site_review/
