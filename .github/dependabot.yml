@@ -24,8 +24,3 @@ updates:
     groups:
       npm:
         patterns: ["*"]
-
-  - package-ecosystem: pip
-    directory: /scripts
-    schedule:
-      interval: monthly
