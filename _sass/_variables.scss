@@ -62,9 +62,10 @@ $background-color           : #fff;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
 $text-color                 : $dark-gray;
+$text-muted-color           : #666d73; // 薄い文字（日付・フッターなど）。白地で 5.2:1（WCAG AA の 4.5:1 を満たす）
 $border-color               : $lighter-gray;
 
-$primary-color              : #7a8288;
+$primary-color              : #5f666b; // ボタン・ヘッダーのリンク。白地・白文字で 5.8:1（旧 #7a8288 は 3.9:1）
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
@@ -86,7 +87,7 @@ $rss-color                  : #fa9b39;
 $soundcloud-color           : #ff3300;
 $stackoverflow-color        : #fe7a15;
 $tumblr-color               : #32506d;
-$twitter-color              : #55acee;
+$twitter-color              : #0b72b5; // 白文字で 5.1:1（旧 #55acee は 2.5:1）
 $vimeo-color                : #1ab7ea;
 $vine-color                 : #00bf8f;
 $youtube-color              : #bb0000;
@@ -94,9 +95,9 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
+$link-color                 : #2b7a91; // 白地で 4.9:1（旧 $info-color #52adc8 は 2.6:1）
 $link-color-hover           : color.mix(#000, $link-color, 25%);
-$link-color-visited         : color.mix(#fff, $link-color, 25%);
+$link-color-visited         : color.mix(#000, $link-color, 10%); // 白を混ぜると基準を下回るため、少し暗くする
 $masthead-link-color        : $primary-color;
 $masthead-link-color-hover  : color.mix(#000, $primary-color, 25%);
 

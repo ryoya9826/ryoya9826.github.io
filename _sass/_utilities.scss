@@ -59,7 +59,7 @@ body:hover .visually-hidden button {
   font-size: 1em;
   font-weight: bold;
   padding: 15px 23px 14px;
-  background: #fff;
+  background: var(--color-surface);
   z-index: 100000;
   text-decoration: none;
   box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
@@ -188,7 +188,7 @@ body:hover .visually-hidden button {
 
 .social-icons {
   .fa {
-    color: #000;
+    color: var(--color-text-strong);
   }
 
   .fa-behance,
@@ -398,7 +398,7 @@ body:hover .visually-hidden button {
     width: 100%;
     height: 100%;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: var(--color-overlay-85);
   }
 
   .modal {
@@ -416,8 +416,8 @@ body:hover .visually-hidden button {
   margin-top: -150px;
   min-height: 0;
   z-index: 9999;
-  background: #fff;
-  border: 1px solid variables.$border-color;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: variables.$border-radius;
   box-shadow: variables.$box-shadow;
 
@@ -432,7 +432,7 @@ body:hover .visually-hidden button {
 
   &__actions {
     padding: 0.5em 1em;
-    border-top: 1px solid variables.$border-color;
+    border-top: 1px solid var(--color-border);
   }
 }
 
@@ -442,12 +442,12 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .footnote {
-  color: color.mix(#fff, variables.$gray, 25%);
+  color: var(--color-muted);
   text-decoration: none;
 }
 
 .footnotes {
-  color: color.mix(#fff, variables.$gray, 25%);
+  color: var(--color-muted);
 
   ol, li, p {
     margin-bottom: 0;
@@ -456,7 +456,7 @@ body:hover .visually-hidden button {
 }
 
 a.reversefootnote {
-  color: variables.$gray;
+  color: var(--color-gray);
   text-decoration: none;
 
   &:hover {

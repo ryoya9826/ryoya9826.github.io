@@ -57,7 +57,7 @@
 
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid variables.$border-color;
+    border-bottom: 1px solid var(--color-border);
   }
 
   p, li, dl {
@@ -84,7 +84,7 @@
       text-decoration: underline;
 
       img {
-        box-shadow: 0 0 10px rgba(#000, 0.25);
+        box-shadow: 0 0 10px var(--color-shadow);
       }
     }
   }
@@ -203,7 +203,7 @@
 .page__share {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid variables.$border-color;
+  border-top: 1px solid var(--color-border);
 
   @include grid.breakpoint(max-width variables.$small) {
     .btn span {
@@ -232,7 +232,7 @@
 
 .page__meta {
   margin-top: 2em;
-  color: color.mix(#fff, variables.$gray, 25%);
+  color: var(--color-muted);
   font-family: variables.$sans-serif;
   font-size: variables.$type-size-6;
 
@@ -272,12 +272,12 @@
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid variables.$light-gray;
+  border: 1px solid var(--color-light-gray);
   border-radius: variables.$border-radius;
 
   &:hover {
     text-decoration: none;
-    color: variables.$link-color-hover;
+    color: var(--color-link-hover);
   }
 }
 
@@ -295,13 +295,13 @@
   margin-bottom: 10px;
   padding-top: 2rem;
   font-size: variables.$type-size-6;
-  border-top: 1px solid variables.$border-color;
+  border-top: 1px solid var(--color-border);
   text-transform: uppercase;
 }
 
 .page__comments-form {
   padding: 1em;
-  background: variables.$lighter-gray;
+  background: var(--color-lighter-gray);
   transition: variables.$global-transition;
 
   &.disabled {
@@ -323,7 +323,7 @@
   margin: 1em 0;
 
   &:not(:last-child) {
-    border-bottom: 1px solid variables.$border-color;
+    border-bottom: 1px solid var(--color-border);
   }
 }
 
@@ -347,7 +347,7 @@
     width: 80px;
     height: 80px;
     padding: 5px;
-    border: 1px solid variables.$border-color;
+    border: 1px solid var(--color-border);
   }
 }
 
@@ -385,7 +385,7 @@
 .page__related {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid variables.$border-color;
+  border-top: 1px solid var(--color-border);
   @include mixins.clearfix();
   float: left;
 

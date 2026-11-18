@@ -10,7 +10,7 @@ table {
   font-family: variables.$global-font-family;
   font-size: variables.$type-size-6;
   border-collapse: collapse;
-  border: 1px solid variables.$light-gray;
+  border: 1px solid var(--color-light-gray);
 
   & + table {
     margin-top: 1em;
@@ -18,21 +18,21 @@ table {
 }
 
 thead {
-  background-color: variables.$lighter-gray;
-  border-bottom: 1px solid variables.$light-gray;
+  background-color: var(--color-lighter-gray);
+  border-bottom: 1px solid var(--color-light-gray);
 }
 
 th {
   padding: 0.5em;
   font-weight: bold;
   text-align: left;
-  border-right: 1px solid variables.$light-gray;
+  border-right: 1px solid var(--color-light-gray);
 }
 
 td {
   padding: 0.5em;
-  border-bottom: 1px solid variables.$light-gray;
-  border-right: 1px solid variables.$light-gray;
+  border-bottom: 1px solid var(--color-light-gray);
+  border-right: 1px solid var(--color-light-gray);
 }
 
 tr, td, th {

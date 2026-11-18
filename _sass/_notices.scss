@@ -1,5 +1,6 @@
 @use "sass:color";
 @use "variables";
+@use "theme";
 
 /* ==========================================================================
    NOTICE TEXT BLOCKS
@@ -56,6 +57,19 @@
 
   code {
     background-color: color.mix(#fff, $notice-color, 95%)
+  }
+
+  // ダークテーマでは、暗い面に基調色を少し混ぜた背景にする
+  @include theme.dark {
+    background-color: color.mix(theme.$dark-surface, $notice-color, 80%);
+
+    a:hover {
+      color: color.mix(#fff, $notice-color, 40%);
+    }
+
+    code {
+      background-color: color.mix(theme.$dark-surface, $notice-color, 88%);
+    }
   }
 
   ul {
