@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "ja-JP"
+locale                   : "en-US" # 本文の主な言語。日本語だけのページは front matter に locale: "ja-JP" を書く
 title                    : "Ryoya Ando"
 title_separator          : "-"
 name                     : &name "Ryoya Ando, Ph.D."
