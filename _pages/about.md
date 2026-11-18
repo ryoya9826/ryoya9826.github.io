@@ -2,13 +2,13 @@
 permalink: /
 title: "Ryoya ANDO"
 excerpt: "About me"
-description: "Ryoya Ando (安藤 遼哉), Ph.D. in mathematics from Tokyo University of Science and manager and data scientist at SKILLUP NeXt, Ltd. Research on commutative algebra, especially homological algebra over non-Noetherian rings."
+description: "Ryoya Ando (安藤 遼哉), Ph.D. in mathematics from Tokyo University of Science and manager and data scientist at Beyont Ltd. Research on commutative algebra, especially homological algebra over non-Noetherian rings."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-I am Ryoya ANDO (安藤 遼哉 in Japanese), a manager and data scientist at [SKILLUP NeXt, Ltd.](https://skillup-next.co.jp/). I received my PhD (Doctor of Science) from [Tokyo University of Science (TUS)](https://www.tus.ac.jp/en/fac/riko/math.html).
+I am Ryoya ANDO (安藤 遼哉 in Japanese), a manager and data scientist at [Beyont Ltd.](https://beyont.jp/en/) (formerly SKILLUP NeXt, Ltd.). I received my PhD (Doctor of Science) from [Tokyo University of Science (TUS)](https://www.tus.ac.jp/en/fac/riko/math.html).
 
 My research focuses on Commutative Algebra, especially non-Noetherian rings.
 
