@@ -23,7 +23,7 @@ last_modified_at: 2026-04-21
     * AI development consulting
     * AI solution development and delivery
   * Apr 2025 – Present : Researcher, [BRIDGE Program](https://www.qst.go.jp/site/bridge/r7-02-bridge-r7.html) — Quantum Human Resource Education Ecosystem (FY2025–2027), with Kyushu University and Q-STAR
-    * Development of [Quantum Literacy Standard (QSS-L) ver.1.0](https://web.archive.org/web/20260311092311/https://qstar.jp/wp-content/uploads/%E9%87%8F%E5%AD%90%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC%E6%A8%99%E6%BA%96ver.1.0.pdf) with [Q-STAR](https://qstar.jp/en) ([press release](https://prtimes.jp/main/html/rd/p/000000010.000128094.html))
+    * Development of [Quantum Literacy Standard (QSS-L) ver.1.0](https://cdn.prod.website-files.com/69e516fadb24e5ec6ce515b2/6ab62204003b85ae10f6b76f_0299cf25cfa26595a3b9823b0adc9979_%E9%87%8F%E5%AD%90%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC%E6%A8%99%E6%BA%96ver.1.0.pdf) with [Q-STAR](https://qstar.jp/en) ([press release](https://prtimes.jp/main/html/rd/p/000000010.000128094.html))
 
 * Apr 2020 – Mar 2023 : Teaching & Research Assistant — [Tokyo University of Science](https://www.tus.ac.jp/en/)
   * Research Assistant, supervised by [Prof. Hisanori Ohashi](https://www.ma.noda.tus.ac.jp/u/oh/index.html), Nov 2022 – Mar 2023
